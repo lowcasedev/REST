@@ -1,0 +1,155 @@
+body {
+    user-select: none;
+    font-family: "Comic Sans MS", serif;
+}
+
+header {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}
+
+.buttons {
+    margin-top: 10px;
+    text-align: center; /* Центрируем содержимое по горизонтали */
+}
+
+.buttons button {
+    border: none;
+    color: white;
+    font-size: 1em;
+    margin: 5px; /* Добавляем немного отступов между кнопками */
+}
+
+.buttons #editButton {
+    width: 100px;
+    height: 30px;
+    background-color: #0074d9;
+}
+
+.buttons #deleteButton {
+    width: 100px;
+    height: 30px;
+    background-color: red;
+}
+
+.buttons #editButton:hover {
+    background-color: rgba(0, 116, 217, 0.7); /* Сделать синий цвет темнее */
+}
+
+.buttons #deleteButton:hover {
+    background-color: rgba(255, 0, 0, 0.7); /* Сделать красный цвет темнее */
+}
+
+#addNoteBtn {
+    background-color: #0074d9;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#notes-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.note {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    width: 300px;
+    margin: 10px;
+    display: inline-block; /* Располагаем заметки в одной строке */
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3); /* Добавляем тень */
+}
+
+.note-title {
+    font-weight: bold;
+    white-space: pre-line;
+    text-align: center;
+    font-size: 1.2em; /* Устанавливаем размер шрифта заголовка */
+}
+
+.note-content {
+    background-color: white;
+    margin-top: 10px;
+    white-space: pre-line;
+    padding: 0 10px 25px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    text-align: left; /* Убираем justify-content: left; и устанавливаем только text-align: left; */
+    font-size: 1em; /* Устанавливаем размер шрифта для содержимого заметки */
+}
+
+
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    background-color: #fff;
+    width: 60%;
+    margin: 100px auto;
+    padding: 20px;
+}
+
+.close {
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#note-title,
+#note-content {
+    resize: none;
+    height: 30px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.update-note-title,
+.update-note-content {
+    resize: none;
+    height: 30px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.update-note-content {
+    height: 260px;
+}
+#note-content {
+    height: 260px;
+}
+
+#saveNote,
+.cancelNote {
+    background-color: #0074d9;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.saveUpdatedNote,
+.updateCancelNote {
+    background-color: #0074d9;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
